@@ -145,7 +145,10 @@ function gameBanner() {
     // ctx.fill();
 	//ctx.clearRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
 	if (banner == 0)
+	{
+		spawnTime = 0;
 		requestAnimationFrame(gameLoop);
+	}
 	else 
 	requestAnimationFrame(gameBanner);
 	
