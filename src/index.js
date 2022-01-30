@@ -104,7 +104,7 @@ function gameLoop(timestamp) {
 	background.forEach(object => object.draw(ctx, input.state));
 	
 	if (blockspeed < -9.5){
-		if (deltaSTime >= (1000 + blockspeed * 20) && Math.round(Math.random())===1) {
+		if (deltaSTime >= (1000 + blockspeed * 20)  && Math.round(Math.random())===1) {
 			spawnTime = timestamp;
 			obstacles.push(new BlockUP(GAME_WIDTH, GAME_HEIGHT));
 		}
